@@ -125,6 +125,7 @@ if(!isMobile()){
                     } }
                   ?>
                 </div>
+                <?php include_once("arclem/settings.php"); ?>
               </div>
               
                 <div class="col-12" id="router-list">
@@ -481,6 +482,7 @@ if(!isMobile()){
                       <?php
                     } }
                   ?>
+                  <?php include_once("arclem/settings.php"); ?>
                 </div>
               </div>
                 <div class="col-12" id="router-list">

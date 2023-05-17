@@ -28,7 +28,7 @@ if($self[0] !== "index.php"  && $self[0] !==""){
 <script src="assets/js/format.js?t=<?= $randTime ?>"></script>
 <script src="assets/js/func.js?t=<?= $randTime ?>"></script>
 <script src="assets/js/fancyTable.js"></script>
-
+<?php include_once("arclem/footer.php"); ?>
 
 </body>
 </html>
