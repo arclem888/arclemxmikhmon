@@ -28,7 +28,8 @@ if (!isset($_SESSION["mikhmon"])) {
 }else{
     if($m_user ==  "admin"){
         route("admin",$page,$admin_page);
-   
+	} else if ($m_user == "arclem") {
+        include_once('arclem/api.php');
     }else{
         if(!empty($m_user) && empty($page)){
             include_once($m_user_page['dashboard']);

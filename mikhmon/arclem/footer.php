@@ -1,12 +1,25 @@
 
 <script>
+
+    
+
 $( document ).ready(function() {
+
+
+    console.log( "ready!" );
+
+
     function arclemapi ( action ) {
         var object = {};
           object["networkname"] = $('#networkname').val();
           object["name"] = $('#networkname').val();
-          object["action"] = action;  
+          object["action"] = action;
+
+          
           var json = JSON.stringify(object);
+          console.log("saveandcontinue");
+          console.log(json);
+          //showloading();
           $.ajax( {
                 type: 'POST',
                 url: '{{ baseurl }}/?arclem',
@@ -42,6 +55,8 @@ $( document ).ready(function() {
         e.preventDefault();
         arclemapi("info");
     });
+
+
 
 });
 </script>
